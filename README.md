@@ -3,6 +3,11 @@
 This is an interactive website built using **HTML**, **CSS**, and **JavaScript**, themed around **United Nations Sustainable Development Goal 14: Life Below Water**.  
 It aims to raise awareness, educate visitors, and encourage action toward preserving marine ecosystems.
 
+## 🌐 Live Site
+
+🔗 [Visit the Website](https://sanila-577.github.io/Ocean-Hope/)  
+
+---
 
 ## 🎯 Project Objective
 
@@ -40,7 +45,7 @@ The site includes the following pages:
 The website is deployed via **GitHub Pages**:
 
 - Branch: `main`
-- Source: `/` (root) or `/docs` folder (depending on setup)
+- Source: `/` (root)
 
 ---
 
