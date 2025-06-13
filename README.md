@@ -1,6 +1,6 @@
 # 🌊 Life Below Water – SDG 14 Awareness Website
 
-This is a multi-page static website built using **HTML**, **CSS**, and **JavaScript**, themed around **United Nations Sustainable Development Goal 14: Life Below Water**.  
+This is an interactive website built using **HTML**, **CSS**, and **JavaScript**, themed around **United Nations Sustainable Development Goal 14: Life Below Water**.  
 It aims to raise awareness, educate visitors, and encourage action toward preserving marine ecosystems.
 
 ## 🌐 Live Site
@@ -67,10 +67,19 @@ The website is deployed via **GitHub Pages**:
 
 ---
 
-## 📷 Screenshots
+## 🛠️ How to Run the Project Locally
 
-_Add images here once available (e.g., homepage, volunteer form, team section)_
+You can view and test the website locally by starting from the **splash screen**.
 
+### ✅ Option 1: Open Directly in a Browser
+
+1. **Clone or download** this repository:
+   ```bash
+   git clone https://github.com/your-username/ocean-guardians.git
+
+2. Navigate to the project folder.
+
+3. Double-click splash.html (or right-click → Open With → Browser) to start the website from the splash screen.
 ---
 
 ## 📜 License
