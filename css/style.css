@@ -53,7 +53,7 @@ header.scrolled {
   font-weight: bold;
 }
 .mission{
-  background: url(img/whale5.jpg);
+  background: url(/images/whale5.jpg);
   text-align: center;
   height: 700px;
   padding: 50px 20px;
