@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Life Below Water - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+  
+</head>
+<style>
+  /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+   
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+}
+body {
+  font-family:'Poppins',sans-serif;
+  background-color: #000000; 
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background-color: rgba(0, 120, 156, 0); 
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease-in-out;
+   }
+
+header.scrolled {
+  background-color: #2c7884; 
+  }
+
+.Logo img{
+  height: 50px;
+  width: auto;
+}
+.Logo{
+  display: flex;
+  align-items: center;
+  margin-left: -35px;
+  margin-bottom: -5px;
+  
+}
+nav{
+  display: flex;
+  font-family:'Montserrat', sans-serif ;
+  margin-left: auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+        }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+        }
+
+nav ul li {
+  margin: 0px;
+        }
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family:'Montserrat', sans-serif ;
+          }
+          
+nav ul li a:hover {
+  background-color: #fff;
+  color: #2c7884;
+  transition: 0.3s;
+        }
+
+.active {
+  background-color: #fff;
+  color: #2c7884;
+        }
+
+footer {
+  background-color: #2c7884;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  }
+.team {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#281ce3, #0f061d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+        }
+
+.team-content {
+  width: 100%;
+  max-width: 1360px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+        }
+
+.box {
+  background: #1b1229;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.3s, border-top 0.3s;
+        }
+
+.box:hover {
+  transform: translateY(-20px);
+  border-top: 3px solid #ea3636;
+        }
+
+.box img {
+  width: 70%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 16px;
+        }
+
+.box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+        }
+
+.box .task {
+  display: none;
+  text-align: left;
+  margin-top: 10px;
+        }
+
+.box:hover .task {
+  display: block;
+        }
+#goTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: block;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#goTopBtn:hover {
+  opacity: 1;
+  background-color: #0056b3;
+}
+
+
+.task p {
+  color: #ffd700;
+  font-weight: 600;
+  margin-bottom: 8px;
+        }
+
+.task ul {
+  padding-left: 20px;
+  list-style-type: disc;
+        }
+
+.task li {
+  font-size: 14px;
+  color: aqua;
+  margin-bottom: 6px;
+        }
+        
+h1{
+  font-size: 60px;
+  text-align: center;
+        }
+       
+
+  
+</style>
+  
+  <body>
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          // Change value based on when you want it to appear
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <div class="wrapper">
+      <!-- Header & Nav -->
+      <header>
+        <div class="Logo">
+          <a href="Home.html">
+            <img src="images/logo.webp" alt="logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="Feedbackform.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="Teampage.html">Team</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="team">
+        <div class="center">
+            <h1>Team Page</h1>
+            <h2>Learn about team! Hover over the images for details</h2>
+        </div>
+    
+        <div class="team-content">
+            <div class="box">
+                <img src="images/person_1.png" alt="Sanila Wijesekara">
+                <h3>Sanila Wijesekara</h3>
+                <h4>Role: Student 1</h4>
+                <div class="task">
+                    <p>Implemented Pages:</p>
+                    <ul>
+                        <li>Splash Screen</li>
+                        <li>Volunteer</li>
+                        <li>Content page</li>
+                        <li>Page Editor</li>
+                        <li>Validation Page</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/person_2.png" alt="Dinith Randika">
+                <h3>Dinith Randika</h3>
+                <h4>Role: Student 2</h4>
+                <div class="task">
+                    <p>Implemented Pages:</p>
+                    <ul>
+                        <li>Home Page</li>
+                        <li>Table</li>
+                        <li>Content page</li>
+                        <li>Page Editor</li>
+                        <li>Validation Page</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/person_3.png" alt="Naduni Ameesha">
+                <h3>Naduni Ameesha</h3>
+                <h4>Role: Student 3</h4>
+                <div class="task">
+                    <p>Implemented Pages:</p>
+                    <ul>
+                        <li>Feedback</li>
+                        <li>Team page</li>
+                        <li>Content page</li>
+                        <li>Page Editor</li>
+                        <li>Validation Page</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/person_4.png" alt="Sethum Munasinghe">
+                <h3>Sethum Munasinghe</h3>
+                <h4>Role: Student 4</h4>
+                <div class="task">
+                    <p>Implemented Pages:</p>
+                    <ul>
+                        <li>User Profile</li>
+                        <li>Sitemap</li>
+                        <li>Content page</li>
+                        <li>Page Editor</li>
+                        <li>Validation Page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    </div>
+    <a href="#" id="goTopBtn">⬆ Go to Top</a>
+    <footer>
+      <p>
+        &copy; 2025 Our Team |
+          <a href="pageEditor_ST1.html">Page Editor ST1</a> |
+          <a href="pageEditor_ST2.html">Page Editor ST2</a> |
+          <a href="pageEditor_ST3.html">Page Editor ST3</a> |
+          <a href="pageEditor_ST4.html">Page Editor ST4</a>
+      </p>
+      <p>Validated & Accessible</p>
+    </footer>
+  </body>
+</html>
+
+
+        
+
+
+
+
+
+

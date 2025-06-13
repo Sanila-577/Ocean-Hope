@@ -1,0 +1,14 @@
+function toggleHeart(button) {
+  button.classList.toggle('clicked');
+}
+
+window.toggleHeart = toggleHeart;
+
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});

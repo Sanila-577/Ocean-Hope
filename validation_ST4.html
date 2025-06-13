@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Page - Student 4</title>
+
+    <!-- Match your CSS file -->
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+
+    <!-- Optional: Inline CSS to match the style and navbar from your Page Editor -->
+    
+  </head>
+
+  <body>
+    <!-- Optional JS for changing navbar color on scroll -->
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <!-- Header with the same structure as your Page Editor -->
+    
+
+    <section class="stud">
+      <h2>Student 4: R.M.D.R. Sugathadasa</h2>
+    </section>
+
+    <div class="container">
+      <!-- Main content area -->
+      <main>
+        <!-- Profile Page Validation -->
+        <section>
+          <h2 id="profileVal">Profile Page Validation Report</h2>
+
+          <!-- Example screenshot; adjust filename/path if different -->
+          <img
+            src="validation_snapshots/validation_profile.png"
+            alt="Profile Page Validation Screenshot"
+            style="width: 800px; max-width: 100%; height: auto; margin: 20px 0"
+          />
+
+          <h3>Back to Page Editor</h3>
+          <p>
+            <!-- Update this link if your Page Editor file name or anchor differs -->
+            <a href="pageEditor_ST4.html#profile"
+              >Return to Profile section in Page Editor</a
+            >
+          </p>
+        </section>
+
+        <!-- Sitemap Page Validation -->
+        <section>
+          <h2 id="sitemapVal">Sitemap Page Validation Report</h2>
+
+          <img
+            src="validation_snapshots/validation_sitemap.png"
+            alt="Sitemap Page Validation Screenshot"
+            style="width: 800px; max-width: 100%; height: auto; margin: 20px 0"
+          />
+
+          <h3>Back to Page Editor</h3>
+          <p>
+            <a href="pageEditor_ST4.html#sitemap"
+              >Return to Sitemap section in Page Editor</a
+            >
+          </p>
+        </section>
+
+        <!-- Content Page Validation -->
+        <section>
+          <h2 id="contentVal">Content Page Validation Report</h2>
+
+          <img
+            src="validation_snapshots/validation_content.png"
+            alt="Content Page Validation Screenshot"
+            style="width: 800px; max-width: 100%; height: auto; margin: 20px 0"
+          />
+
+          <h3>Back to Page Editor</h3>
+          <p>
+            <a href="pageEditor_ST4.html#content"
+              >Return to Content section in Page Editor</a
+            >
+          </p>
+        </section>
+      </main>
+
+      <!-- Sidebar area -->
+      <aside>
+        <h3>Validation Sections</h3>
+        <ul class="top-level-ul">
+          <li><a href="#profileVal">Profile Page Validation</a></li>
+          <li><a href="#sitemapVal">Sitemap Page Validation</a></li>
+          <li><a href="#contentVal">Content Page Validation</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Marine Conservation Initiative</p>
+    </footer>
+
+    <!-- Go to top button -->
+    <button id="goTopBtn" onclick="window.scrollTo(0, 0)">↑</button>
+  </body>
+</html>

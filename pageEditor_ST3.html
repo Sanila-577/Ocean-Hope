@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Editor Student 3 - Naduni Ameesha</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+  </head>
+  <body>
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          // Change value based on when you want it to appear
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+    
+    <header id="top">
+        <h1>Life Below Water</h1>
+    </header>
+
+    <section class="stud">
+        <h2>Naduni Ameesha, Student 3</h2>
+    </section>
+
+    <div class="container">
+       
+        <main>
+            <section>
+                <h2 id="feedbackpage">Feedback page</h2>
+                    <h3>Technical Description</h3>
+                        <p>HTML and CSS are used to create the **Feedback Page**, a form that enables users to put forward their opinions, comments, and improvements to the site. The primary HTML tags and CSS properties employed are:</p>
+                            <ul><b><u>HTML Structure:</u></b> <br>
+                                <ul>
+                                    <li><b>&ltform&gt:</b>This web element includes all the input fields and bank details needed to be completed in a user-friendly way by the customer.</li><br>
+                                   <li><b> &ltfieldset&gt:</b> These are groups related to the form elements. It is used to enhance the structure and readability of the form.</li><br>
+                                    <li><b>&ltinput&gt and &lttextarea&gt:</b> Here the text, email, and feedback adding are the basic ones.</li><br>
+                                    <li><b>&ltlabel&gt: </b>This feature helps to differentiate each input field. Therefore, it becomes clearer and more understandable for the user.</li><br>
+                                    <li><b>&ltbutton&gt:</b> Users be able to submit the form.</li>
+                                   
+                                </ul>
+                            </ul> 
+                                <ul><b><u>CSS Styling:</u></b><br>
+                                    <ul>
+                                        <li><b>&ltbody&gt: </b>It uses a bright colored wallpaper (`#c9d6fa`) so the user can enjoy the visual experience..</li><br>
+                                    <li> <b>&ltcontent&gt: </b>Lets the form be more readable and also allows for more efficient spacing and padding to be applied.</li><br>
+                                        <li><b>&ltinput[type="text"], input[type="email"]&gt: </b> he styled text field has padding, border-radius, and width properties to create an intuitive and accessible input field..</li><br>
+                                        <li><b>&ltrating&gt:</b>  It uses the **grid layout** for a thought-out rating selection box.</li><br>
+                                        <li><b>&ltbutton: </b>It prompts a visual feedback as the button color shifts when a user moves the mouse cursor over, thus improving UX.</li><br>
+                                        <li><b>&ltheader&gt: </b>It features a **hidden navigation bar** using JavaScript to define a boundary and a threshold to make navigation bar appear with the toggle scroll button. It has a background color of white. A **scroll-based** method with **CSS only** is used to change colors in a flashy manner on the bar.</li>
+                                    
+                                    </ul>
+                              </ul>
+                    
+                    
+                    <h3><u>Accessibility</u></h3>
+                    
+                    <ul><p>Accessibility has been considered in the following ways:</p>
+                        <ul>
+                            <li><b>&ltlabel&gt : </b>This is so because this means that all of the form fields shall be provided with alternate text. Screen readers can now convert the text for the visually impaired. </li><br>
+
+                            <li><b>Contrast and Readability:</b> A clean layout and high-contrast colors will enhance the visibility of text.</li><br>
+
+                            <li><b>Keyboard Navigation: </b>Users can navigate between the form fields using the `Tab` key or other shortcut keys..</li><br>
+
+                            <li><b>Required Fields:  </b>These are the fields which are indicated by the user input code, for instance by higly respectcted designers as a go-to thing for their design.</li><br>
+
+                            <li><b>Responsive Design:</b> The form scales to various screen sizes using relative widths and margins.</li><br>
+                            
+                        </ul>
+                    </ul>  
+
+                <h3><u>Link to the validation page</u></h3> 
+                        <p><a href="validation_ST3.html#feedbackpage">link to the validation page</a>
+
+                    <h3><u>Link to the page</u></h3>
+                        <p><a href="Feedbackform.html">Link to the feedback form</a></p>
+            </section>
+
+            <section>
+                <h2 id="teampage">Team page</h2>
+                    <h3>Technical Description</h3>
+                        <ul><b>HTML Structure:</b>
+                                <ul>
+                                    <li><b>&ltheader&gt : </b> A logo and navigation menu that is fixed to the top of the page are contained within this section. The background color of the header changes when scrolling of the user is done, thus making it more visually appealing.</li><br>
+
+                                    <li><b>&ltsection class="team"&gt: </b>This is the main section which has a full-page layout with a radial gradient background and the images, names, and roles of the team members are included in it. </li><br>
+                                        
+                                    <li><b>&ltdiv class="box"&gt: </b>Every team member is given in the form of a "box" element. The application of the hover effect on the boxes, which reveals more details about the tasks the participants worked on, is shown using CSS.</li><br>
+                                        
+                                    <li><b>&ltfooter&gt: </b> Links for each editor, their name, and a notice that the page validates and is accessible to everyone are included.</li><br>
+                                </ul>
+                                <b>CSS Styling:</b><br>
+                                <ul>
+                                    <li><b>Body and Layout:</b> The fonts used are Poppins and Montserrat. The background is set to a dark, water-like color (#000000), creating a visual impression of the ocean or underwater theme. Flexbox and grid systems are used for page layout, so that content is responsive.</li><br>
+
+                                    <li><b>Header Styling: </b> Although the navigation bar is initially transparent, it changes its color during user scrolling, thanks to JavaScript that adds the scrolled class to the header.</li><br>
+
+                                    <li><b>Team Member Boxes: </b>The design of each box gets a dark finishing with rounded corners. An animation is set for each box, which will show it by moving up and displaying extra task information in an animated way.</li><br>
+
+                                    <li><b>Footer: </b> The footer shares the same color with the header, thus keeping the design intact. It also offers links to each page editor for accessibility</li><br>
+                                </ul>
+                            </ul>
+
+                    <h3>Accessibility</h3>
+                                <ul>
+                                    <li><b>Responsive Design: </b>This page implements flexible grid layouts and relative units to ensure an optimal viewing experience for all screen sizes.</li><br>
+
+                                    <li><b>Hover and Focus States:</b> The links in the navigation and team member boxes have their unique hover states for an easier and more efficient page navigation.</li><br>
+                                    
+                                    <li><b>Contrast: The design indeed offers proper contrast between the bigger the text and background, thus enhancing readability.</b><br>
+                                    
+                                    <li><b>Navigation:</b> Through the new design, users will be able to interact with the team members and navigate the rest of the site by using a fixed, easily accessible header.</li>
+                                </ul>
+                    <h3>Interactive Features</h3>
+                    <ul>
+                        <li><b>Hover Effects: </b>For instance, when the users point to a team member’s image, a more comprehensive explanation about their role and contributions is displayed, which creates a dynamic and intuitively interacting interface. This is enabled by CSS transitions and hiding/showing content.
+                        </li>
+                        <li><b>Fixed Navigation: </b>The header is always fixed at the top of the page to easily view the different sections using the anchor link without needing to go to the top.</li>
+                    </ul>
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST3.html#teampage">link to the validation page</a>
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="Teampage.html">Link to the team page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <ul><b>HTML Structure:</b>
+                        <ul>
+                            <li><b>&ltheader&gt: </b>It’s the place where the logo is placed and also a fixed navigation bar with an option to turn my theme to floating color mode in real-time.</li><br>
+
+                           <li><b>&ltsection class="intro"&gt: </b> This is the section that presents the main issue of the page. It has an image and a text with a scannable structure providing ongoing education of the problem.</li><br>
+                                
+                            <li><b>&ltsection class="threats"&gt :</b> Concerning the potential threats, this section educates the audience through pictures and corresponding textual explanation.</li><br>
+                                
+                            <li><b>&ltsection class="help"&gt:</b> The message of hope coming from the digital reach emphasizes pluralism and inclusion with mixed media complementing the textual part of it.</li><br>
+                        </ul>
+                    </ul>
+                    
+                    <h3>CSS Styling:</h3>
+                    <ul>
+                        <li><b>Fonts & Colors:</b> Reports the use of Poppins and Montserrat fonts. Also reveals the dark aquatic theme as the trendy colors for visual elements and links.</li><br>
+                        <li><b>Layout: </b>Responsive design is achieved through flexbox and grid systems.</li><br>
+                        <li><b>Hover Effects: </b>Team member “boxes” that react when users interact by hovering reveal additional data related to the team member profile.</li>
+                    </ul>
+                      </ul>
+
+
+
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li><b>Responsive Design:</b> Provides aid on how the page will render nicely on different screen sizes.</li><br>
+                        <li><b>Hover/Focus States:</b>Custom visual feedback for links and boxes.</li><br>
+                        <li><b>Contrast:</b>Proper contrast for readability.</li>
+                        
+                    </ul>
+
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST3.html#content">link to the validation page</a>
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="Content_St3.html">Link to the content page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>
+                        Web development had a plot to tell, and it was not a fairytale, for there were some struggles on the way, which worked towards developing technical skills and problem-solving.” One of the main issues was the user experience was not smooth across different devices. The first step was to make the design more suitable for small screens, because of the missing optimization which in turn affected navigation and legibility. The following were the main accomplishments realized: the use of FlexBox and CSS Grid along with the philosophy of using 'media queries' of responding to lay-out resizing by dynamically changing the UI. On the other hand, accessibility was another challenge, as the website did not contain the necessary alt attributes and ARIA labels for the images and interactive elements, respectively. The correction of these issues resulted in the website being more accessible to the group of people who have various types of disabilities. These difficulties brought accessibility and responsiveness into sharp focus, demonstrating the necessity of integrating these elements from the beginning, otherwise, they will turn into bulky makeovers.
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p> 
+                        The website is designed to be accessible by people with disabilities ensuring they would have inclusive experience. It is guiding its users across different devices via the mobile-friendly responsive layout. The user’s data has the necessary protection and other GDPR standards are ensured. The content is in line with Janet’s guiding rules, which are eco-responsibility, digital citizenship, and educational purpose
+                    </p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul class="ref">
+
+                        <li>Adobe Stock (2025) Adobe Stock. Available at:<a href="https://stock.adobe.com/lk/search?k=over-fishing&asset_id=1237291584"> https://stock.adobe.com/lk/search?k=over-fishing</a> (Last accessed: 10 Mar 2025) </li><br>
+
+                        <li>Youtube (2025),<i> How To Create Our Team Section Using HTML And CSS.</i> Available at: <a href= "https://www.youtube.com/watch?v=WuuvnVpU_Rg&list=WL&index=4"> https://youtu.be/WuuvnVpU_Rg </a>(Accessed: 28 February 2025).</li><br>
+                   
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+            <footer>
+               <p>© 2025 Marine Conservation Initiative</p>
+            </footer>
+        </main>
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul">
+                <li>Naduni Ameesha</li>
+                <ul>
+                    <li><a href="#feedbackpage">Feedback Page</a></li>
+                    <li><a href="#teampage">Team Page</a></li>
+                    <li><a href="#content">Content Page</a></li>
+                </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </body>
+    </html>
+
+
+     
+    

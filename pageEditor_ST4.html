@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor Student 4 - R.M.D.R. Sugathadasa</title>
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+    <!-- External CSS link -->
+    
+  </head>
+  <body>
+    <script>
+      /* This JavaScript changes the navbar color on scrolling */
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <section class="stud">
+      <h2>Student 4: R.M.D.R. Sugathadasa</h2>
+    </section>
+
+    <div class="container">
+      <!-- Main content area -->
+      <main>
+        <!-- PROFILE PAGE SECTION -->
+        <section>
+          <h2 id="profile">Profile Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            The profile page is implemented with semantic HTML tags including
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;section&gt;</code>, and <code>&lt;div&gt;</code> to create
+            a logical and accessible structure. Flexbox is used to center
+            content and manage layout in a responsive manner. Inline CSS styles
+            complement an external stylesheet for specific profile card elements
+            (such as border-radius, box-shadow, and progress bars) to enhance
+            the visual hierarchy and user experience.
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Accessibility has been addressed by including descriptive
+            <code>alt</code>
+            attributes for images, ensuring sufficient color contrast, and using
+            semantic tags to assist screen readers. The interactive elements,
+            like progress bars and navigation links, are designed to be keyboard
+            navigable.
+          </p>
+          <h3>Link to the validation page</h3>
+          <p>
+            <a href="validation_ST4.html#profileVal"
+              >Include a link to the validation page</a
+            >, which jumps directly to the Profile Page validation section.
+          </p>
+          <h3>Link to the page</h3>
+          <p>
+            <a href="profile.html">Link to the profile page</a>
+          </p>
+        </section>
+
+        <!-- SITEMAP PAGE SECTION -->
+        <section>
+          <h2 id="sitemap">Sitemap Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            The sitemap page uses an <code>&lt;svg&gt;</code> element to display
+            a visual map of the website’s navigation. Rectangular nodes (
+            <code>&lt;rect&gt;</code>) represent individual pages and are linked
+            with <code>&lt;line&gt;</code> elements. Text labels are added with
+            the <code>&lt;text&gt;</code> tag. The SVG is styled with CSS to
+            match the overall website design and includes hover effects along
+            with keyboard navigation enhancements via <code>tabindex</code> and
+            JavaScript key event listeners.
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Accessibility is improved by assigning a <code>tabindex</code> to
+            each node for keyboard navigation and ensuring that interactive SVG
+            elements respond to both click and keypress events. The use of
+            descriptive <code>&lt;title&gt;</code> tags within the SVG further
+            aids screen readers.
+          </p>
+          <h3>Link to the validation page</h3>
+          <p>
+            <a href="validation_ST4.html#sitemapVal"
+              >Link to the validation page</a
+            >
+            that jumps to the Sitemap validation section.
+          </p>
+          <h3>Link to the page</h3>
+          <p>
+            <a href="sitemap.html">Link to the sitemap page</a>
+          </p>
+        </section>
+
+        <!-- CONTENT PAGE SECTION -->
+        <section>
+          <h2 id="content">Content Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            The content page (focused on Marine Pollution) is structured using a
+            hero section with a full-width background image and overlaid text
+            with text-shadow for improved readability. Sections are organized
+            with
+            <code>&lt;section&gt;</code> tags, and headings (<code
+              >&lt;h1&gt;</code
+            >
+            and <code>&lt;h2&gt;</code>) structure the content for both users
+            and search engines. CSS properties such as <code>background</code>,
+            <code>padding</code>, <code>margin</code>, and
+            <code>border-radius</code> are employed to create a modern,
+            responsive design that adapts across devices.
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Accessibility improvements include the use of semantic HTML
+            elements, descriptive <code>alt</code> text for all images, and
+            careful color contrast choices. The layout supports keyboard
+            navigation through clear focus indicators and logical heading order.
+          </p>
+          <h3>Link to the validation page</h3>
+          <p>
+            <a href="validation_ST4.html#contentVal"
+              >Link to the validation page</a
+            >
+            that jumps to the Content Page validation section.
+          </p>
+          <h3>Link to the page</h3>
+          <p>
+            <a href="content_ST4.html"
+              >Link to the content page</a
+            >
+          </p>
+        </section>
+
+        <!-- CHALLENGES AND LESSONS LEARNED SECTION -->
+        <section>
+          <h2 id="challenge">Challenges and Lessons Learned</h2>
+          <p>
+            One of the major challenges was ensuring cross-browser consistency
+            while integrating both inline and external CSS. In addition, making
+            interactive elements such as the SVG nodes fully accessible required
+            adding extra JavaScript to support keyboard events. These challenges
+            taught me the importance of modular code and thorough testing on
+            various devices and browsers. It also emphasized the need for
+            consistent design practices and early accessibility testing.
+          </p>
+        </section>
+
+        <!-- COMPLIANCE SECTION -->
+        <section>
+          <h2 id="compliance">Compliance</h2>
+          <p>
+            All pages are developed in compliance with Janet regulations for web
+            page publication. Semantic HTML, proper use of heading tags, and
+            valid CSS ensure that each page is both accessible and search engine
+            friendly. Furthermore, each page was validated with the W3C
+            validator to ensure that the code meets modern web standards and
+            accessibility guidelines.
+          </p>
+        </section>
+
+        <!-- REFERENCES SECTION -->
+        <section>
+          <h2 id="ref">References</h2>
+          <p>The following resources were used during development:</p>
+          <ul class="ref">
+            <li>
+              vecteezy (2025) <i>vecteezy</i> Available at:
+              https://www.vecteezy.com/free-photos/ (Last accessed: 11 Feb
+              2025).
+            </li>
+            <li>
+              Duckett, J., 2011. HTML and CSS: Design and Build Websites,
+              <i>John Willey &amp; Sons, Inc. Indianapolis.</i>
+            </li>
+            <li>
+              MDN Web Docs. Available at:
+              <a href="https://developer.mozilla.org/" target="_blank"
+                >https://developer.mozilla.org/</a
+              >
+              (Last accessed: 10 Mar 2025).
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- Sidebar area -->
+      <aside>
+        <h3>Core pages developed:</h3>
+        <!-- Only Student 4 pages are listed -->
+        <ul class="top-level-ul">
+          <li>Student 4</li>
+          <ul>
+            <li><a href="#profile">Profile page</a></li>
+            <li><a href="#sitemap">Sitemap page</a></li>
+            <li><a href="#content">Content page</a></li>
+          </ul>
+          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#ref">References</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© 2025 Marine Conservation Initiative</p>
+    </footer>
+
+    <!-- Go to top button -->
+    <button id="goTopBtn" onclick="window.scrollTo(0, 0)">↑</button>
+  </body>
+</html>

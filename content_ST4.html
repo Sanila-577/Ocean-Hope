@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marine Pollution</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      #main-bg {
+        padding-top: 80px;
+        padding-bottom: 30px; /* Some space above footer */
+      }
+
+      /* Hero section: Here I used the cargo.jpg as background */
+      .hero {
+        background: url("cargo.jpg") no-repeat center center/cover !important;
+        height: 700px;
+        display: flex;
+        flex-direction: column; /* Stack title and description vertically */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 10px;
+        margin: 0 auto 40px auto;
+        padding: 50px 30px;
+      }
+      /* Added a text-shadow to title and description so they stand out. Because you cannot see the white leeter on top of the cargo.jpg image */
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+      .hero p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 800px;
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      section {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+        padding: 30px;
+        max-width: 900px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      section p,
+      section ul {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #fff;
+      }
+      section ul {
+        margin-top: 10px;
+      }
+      section img {
+        display: block;
+        margin: 20px auto;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        max-height: 350px;
+      }
+
+      .internal-nav ul {
+        gap: 20px;
+      }
+
+      /* I added this code to style the go to top button */
+      #goTopBtn {
+        display: block;
+        background-color: #2c7884;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+      #goTopBtn:hover {
+        background-color: #ffffff;
+        color: #2c7884;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      /* this is part of the navbar. This js is for changing navbar colour when scrolling. */
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <header>
+      <div class="Logo">
+          <a href="Home.html">
+            <img src="images/logo.webp" alt="logo" />
+          </a>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="Home.html" class="active">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="Feedbackform.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="Teampage.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main-bg">
+      <main class="wrapper">
+        <section class="hero">
+          <h1>Marine Pollution</h1>
+          <p>
+            Understanding its causes, effects, and solutions for a healthier
+            ocean and a sustainable future for all.
+          </p>
+        </section>
+
+        <!-- Internal Navigation links because the page is larger than the screen. -->
+        <nav class="internal-nav">
+          <ul>
+            <li>
+              <a href="#introduction" class="internal-link">Introduction</a>
+            </li>
+            <li><a href="#causes" class="internal-link">Causes</a></li>
+            <li><a href="#effects" class="internal-link">Effects</a></li>
+            <li><a href="#solutions" class="internal-link">Solutions</a></li>
+            <li>
+              <a href="#how-to-help" class="internal-link">How to Help</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Introduction section-->
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>
+            Marine pollution is a critical issue affecting the health of our
+            oceans. From plastic waste to oil spills, human activities continue
+            to disrupt aquatic ecosystems, endangering marine life and coastal
+            communities. The buildup of contaminants not only threatens
+            biodiversity but also impacts the global climate, fisheries, and
+            economies that depend on clean and vibrant marine habitats.
+          </p>
+          <p>
+            Our oceans cover over 70% of the Earth's surface, making them vital
+            for regulating climate, supporting countless species, and providing
+            livelihoods for millions of people. Protecting our marine
+            environment is essential for food security, weather stability, and
+            the overall health of our planet.
+          </p>
+          <img
+            src="images/vecteezy_plastic-carrier-bags-bottles-and-other-garbage-pollution_26777996.jpg"
+            alt="Polluted ocean waters with plastic bags and bottles"
+          />
+        </section>
+
+        <!-- Causes of Marine Pollution section -->
+        <section id="causes">
+          <h2>Causes of Marine Pollution</h2>
+          <ul>
+            <li>
+              <strong>Plastic Waste:</strong> Millions of tons of plastic,
+              including single-use items and microplastics, enter oceans yearly.
+            </li>
+            <li>
+              <strong>Oil Spills:</strong> Accidents in drilling and
+              transportation pollute the water with harmful hydrocarbons.
+            </li>
+            <li>
+              <strong>Chemical Contaminants:</strong> Industrial chemicals and
+              heavy metals can build up in aquatic ecosystems.
+            </li>
+            <li>
+              <strong>Sewage & Wastewater:</strong> Untreated or poorly treated
+              waste disrupts marine life and water quality.
+            </li>
+          </ul>
+          <p>
+            Rapid urbanization and poor waste management systems amplify these
+            challenges, making consistent monitoring and international
+            cooperation crucial for mitigating the sources of marine pollution.
+          </p>
+          <img
+            src="images/vecteezy_garbage-from-plastic-bottles-in-the-sea-top-view_30603616.jpeg"
+            alt="Floating plastic waste from a top view"
+          />
+        </section>
+
+        <!-- Effects of Marine Pollution section -->
+        <section id="effects">
+          <h2>Effects of Marine Pollution</h2>
+          <ul>
+            <li>
+              <strong>Harm to Marine Life:</strong> Animals ingest plastic or
+              become entangled in it, leading to injuries or fatalities.
+            </li>
+            <li>
+              <strong>Contaminated Seafood:</strong> Toxic chemicals and
+              microplastics enter the food chain, eventually reaching human
+              consumers.
+            </li>
+            <li>
+              <strong>Coral Reef Destruction:</strong> Pollutants and climate
+              change stressors lead to coral bleaching and habitat loss.
+            </li>
+            <li>
+              <strong>Economic Losses:</strong> Coastal tourism, fishing, and
+              other marine-based industries suffer from degraded environments.
+            </li>
+          </ul>
+          <p>
+            These effects cascade through entire ecosystems, disrupting the
+            balance of marine habitats that have been stable for millions of
+            years. As coral reefs die and fish populations decline, communities
+            relying on these resources face both immediate and long-term
+            socio-economic challenges.
+          </p>
+          <img
+            src="images/vecteezy_dead-fish-floated-in-the-dark-water-water-pollution_9202408.JPG"
+            alt="Dead fish floating in polluted water"
+          />
+        </section>
+
+        <!-- Solutions section -->
+        <section id="solutions">
+          <h2>Solutions to Combat Marine Pollution</h2>
+          <ul>
+            <li>Reduce plastic use and promote biodegradable alternatives.</li>
+            <li>
+              Strengthen waste management and recycling programs globally.
+            </li>
+            <li>
+              Support businesses and products that prioritize sustainability.
+            </li>
+            <li>Encourage stricter environmental policies and enforcement.</li>
+          </ul>
+          <p>
+            Tackling marine pollution requires a cooperative effort from
+            individuals, industries, and governments. By adopting more
+            responsible consumption patterns, improving recycling
+            infrastructures, and supporting scientific research, we can guide
+            our planet towards a cleaner future.
+          </p>
+          <img
+            src="images/vecteezy_beach-cleanup-volunteers-collect-trash-on-a-sandy-shore_29917493.jpg"
+            alt="Beach cleanup volunteers collecting trash"
+          />
+        </section>
+
+        <!-- How to Help section-->
+        <section id="how-to-help">
+          <h2>How to Help</h2>
+          <p>
+            Every person can play a part in reducing marine pollution. Here are
+            some everyday actions you can take:
+          </p>
+          <ul>
+            <li>
+              <strong>Participate in Cleanups:</strong> Join local or national
+              beach cleanup drives.
+            </li>
+            <li>
+              <strong>Conserve Water:</strong> Reducing household water usage
+              lessens the load on sewage treatment.
+            </li>
+            <li>
+              <strong>Choose Sustainable Seafood:</strong> Opt for seafood
+              certified by reputable organizations.
+            </li>
+            <li>
+              <strong>Raise Awareness:</strong> Share information about marine
+              conservation with friends and family.
+            </li>
+          </ul>
+          <p>
+            By taking small steps, we collectively move towards a healthier
+            marine ecosystem, ensuring oceans remain vibrant and life-sustaining
+            for generations to come.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- The footer section with the editor pages and the go to top button -->
+    <footer>
+      <p>
+        &copy; 2025 Our Team |
+          <a href="pageEditor_ST1.html">Page Editor ST1</a> |
+          <a href="pageEditor_ST2.html">Page Editor ST2</a> |
+          <a href="pageEditor_ST3.html">Page Editor ST3</a> |
+          <a href="pageEditor_ST4.html">Page Editor ST4</a>
+      </p>
+      <p>Validated & Accessible</p>
+    </footer>
+
+    <a href="#" id="goTopBtn">⬆ Go to Top</a>
+  </body>
+</html>

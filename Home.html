@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Life Below Water - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <div class="wrapper">
+      <header>
+        <div class="Logo">
+          <a href="Home.html">
+            <img src="images/logo.webp" alt="logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="Feedbackform.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="Teampage.html">Team</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <section class="fade-in">
+            <h1>Life Below Water</h1>
+          </section>
+        </section>
+        <section class="mission">
+          <h2>Our Mission</h2>
+
+          <p>
+            We are committed to protecting marine life and preserving ocean
+            ecosystems through education, conservation, and community
+            engagement. Our goal is to raise awareness about the importance of
+            marine biodiversity and inspire action to combat pollution, climate
+            change, and habitat destruction. By working together, we can create
+            a sustainable future where oceans thrive, marine species are
+            protected, and future generations inherit a healthier, more vibrant
+            marine environment.
+          </p>
+        </section>
+        <section class="topics">
+          <h3>Explore Our Topics</h3>
+          <div class="cards">
+            <div class="card">
+              <img src="images/coral.jpg" alt="Coral Reefs" />
+              <div class="card-content">
+                <h4>Coral Reefs</h4>
+                <button onclick="window.location.href='Content_St2.html'">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/cargo.jpg" alt="Marine Pollution" />
+              <div class="card-content">
+                <h4>Marine Pollution</h4>
+                <button onclick="window.location.href='content_ST4.html'">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/fish.jpg" alt="Overfishing" />
+              <div class="card-content">
+                <h4>Overfishing</h4>
+                <button onclick="window.location.href='Content_St3.html'">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/marine.jpg" alt="Marine Habitats" />
+              <div class="card-content">
+                <h4>Marine Habitats</h4>
+                <button onclick="window.location.href='content_ST1.html'">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <a href="#" id="goTopBtn">⬆ Go to Top</a>
+
+    <footer>
+      <p>
+        &copy; 2025 Our Team |
+          <a href="pageEditor_ST1.html">Page Editor ST1</a> |
+          <a href="pageEditor_ST2.html">Page Editor ST2</a> |
+          <a href="pageEditor_ST3.html">Page Editor ST3</a> |
+          <a href="pageEditor_ST4.html">Page Editor ST4</a>
+      </p>
+      <p>Validated & Accessible</p>
+    </footer>
+  </body>
+</html>
