@@ -39,7 +39,7 @@ header.scrolled {
   
 }
 .hero {
-  background: url('whale4.jpg') no-repeat center center/cover; 
+  background: url('/images/whale4.jpg') no-repeat center center/cover; 
   height: 700px;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ header.scrolled {
   font-weight: bold;
 }
 .mission{
-  background: url(/images/whale5.jpg);
+  background: url(img/whale5.jpg);
   text-align: center;
   height: 700px;
   padding: 50px 20px;
