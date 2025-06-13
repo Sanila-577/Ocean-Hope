@@ -3,12 +3,6 @@
 This is an interactive website built using **HTML**, **CSS**, and **JavaScript**, themed around **United Nations Sustainable Development Goal 14: Life Below Water**.  
 It aims to raise awareness, educate visitors, and encourage action toward preserving marine ecosystems.
 
-## 🌐 Live Site
-
-🔗 [Visit the Website](https://your-username.github.io/life-below-water-awareness-site/)  
-_(Update this link after deploying with GitHub Pages)_
-
----
 
 ## 🎯 Project Objective
 
