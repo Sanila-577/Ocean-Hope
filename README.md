@@ -78,7 +78,7 @@ You can view and test the website locally by starting from the **splash screen**
 
 2. Navigate to the project folder.
 
-3. Double-click splash.html (or right-click → Open With → Browser) to start the website from the splash screen.
+3. Double-click index.html (or right-click → Open With → Browser) to start the website from the splash screen.
 ---
 
 ## 📜 License
