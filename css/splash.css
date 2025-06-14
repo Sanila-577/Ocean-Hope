@@ -100,3 +100,46 @@ body {
         opacity: 0;
     }
 }
+
+/* 🔁 Responsive styles for tablets and phones */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+    font-size: 24px;
+    border-radius: 50px;
+    padding: 15px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p, .content h3, .content div p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .content p, .content div p {
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
