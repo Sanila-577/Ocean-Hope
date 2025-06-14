@@ -74,7 +74,7 @@ You can view and test the website locally by starting from the **splash screen**
 
 1. **Clone or download** this repository:
    ```bash
-   git clone https://github.com/your-username/ocean-guardians.git
+   git clone https://github.com/Sanila-577/Ocean-Hope.git
 
 2. Navigate to the project folder.
 
